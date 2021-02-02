@@ -19,6 +19,7 @@ export const mainRouter = [
     path: "/detail/:movieCode",
     exact: false,
     Component: Detail,
+    
   },
   {
     path: "/booking/:code",
