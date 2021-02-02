@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../DangHungThai__QLNV"
+		},
+		{
+			"path": "../../../../Lession-in-class/ES6"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DangHungThai__ES6"
+	}
+}

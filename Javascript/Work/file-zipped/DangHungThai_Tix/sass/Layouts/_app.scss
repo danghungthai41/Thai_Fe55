@@ -1,0 +1,46 @@
+.app {
+  background: url(../../img/banner.jpeg);
+  width: 100%;
+  background-size: contain;
+  .app__content {
+    width: 75%;
+    margin: 0 auto;
+    padding: 120px 0 80px 0;
+
+    .app__left {
+      .app__text {
+        width: 80%;
+        color: #fff;
+
+        h3{
+          font-size: xx-large;
+
+        }
+        p{
+          font-size: medium;
+          margin-top: 30px;
+        }
+        button{
+          @include buttonStyle($color-white-0, $color-red-0, $color-red-0, medium, $fw-4, $pd-1, $pd-3, $border-radius-1);
+        }
+        a{
+          color: $color-white-0;
+          border-bottom: 1px solid $color-white-0;
+        }
+      }
+    }
+    .app__right {
+      .app__phoneCase {
+        width: 200px;
+        position: relative;
+      }
+      .app__imgContent {
+        position: absolute;
+        top: 0;
+        right: 30%;
+        width: 180px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

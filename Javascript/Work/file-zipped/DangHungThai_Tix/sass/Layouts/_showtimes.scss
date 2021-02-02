@@ -1,0 +1,8 @@
+.showTime {
+    .showTime__content {
+        padding: 50px 0;
+        width: 77%;
+        margin: 0 auto;
+        @include styleTextTitle($color-black-1, $fs-5,$fw-normal, $fs-6, $color-red-2, $fs-6, $fw-normal);
+    }
+}

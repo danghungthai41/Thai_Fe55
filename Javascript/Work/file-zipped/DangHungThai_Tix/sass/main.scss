@@ -1,0 +1,28 @@
+//Helpers
+@import './Helpers/variables';
+@import './Helpers/mixin';
+
+//Vendors
+
+//Bases
+@import './Bases/reset.scss';
+@import './Bases/customize';
+
+//Layouts
+@import './Layouts/header';
+@import './Layouts/carousel';
+@import './Layouts/footer';
+@import './Layouts/showtimes';
+@import './Layouts/schedulemovies';
+@import './Layouts/news';
+@import './Layouts/app';
+//Components
+@import './Components/button';
+@import './Components/card-movies';
+@import './Components/card-news';
+//Pages
+@import './Pages/admin';
+@import './Pages/home';
+
+//Themes
+

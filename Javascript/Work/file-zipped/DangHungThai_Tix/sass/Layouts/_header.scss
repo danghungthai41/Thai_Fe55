@@ -1,0 +1,104 @@
+// header{
+//     position: fixed;
+//     z-index: 10;
+//     width: 100%;
+// }
+.myNavBar {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 0;
+    // white-space: nowrap;
+    .myNavBar__left {
+        padding: 0;
+        img {
+            width: 50px;
+        }
+        .myNavBar__title {
+            .nav-item {
+                .nav-link {
+                    color: $color-black-1;
+                    &:hover {
+                        color: $color-red-0;
+                        transition: all 0.2s;
+                    }
+                    &.active {
+                        color: $color-red-0;
+                    }
+                }
+            }
+        }
+    }
+    .myNavBar__right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        @include styleText($color-gray-0, $fs-1, $fw-0);
+        .myNavBar__login {
+            border-right: 1px solid $color-gray-1;
+            white-space: nowrap;
+            cursor: pointer;
+            img {
+                width: 30px;
+                border-radius: 50%;
+                margin-right: $mg-0;
+            }
+            span {
+                padding-right: 10px;
+            }
+        }
+        .dropdown {
+            position: relative;
+            a {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            .myNavBar__locate {
+                white-space: nowrap;
+                span {
+                    margin-right: 20px;
+                    @include styleText($color-gray-0, $fs-1, $fw-0);
+                }
+                &::after {
+                    @include styleText($color-gray-0, $fs-4, $fw-0);
+                }
+            }
+            .dropdown-menu {
+                max-height: 300px;
+                overflow-y: scroll;
+                position: absolute;
+                top: 47px;
+                right: 0;
+                .dropdown-item {
+                    &:hover {
+                        background: $color-blue-1;
+                        color: $color-white-0;
+                        transition: all 0.2s;
+                    }
+                }
+            }
+        }
+    }
+   
+}
+@media screen and (max-width: 992px) {
+    .myNavBar {
+        .myNavBar__left {
+            .myNavBar__title {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .myNavBar {
+        .myNavBar__right {
+            display: none;
+        }
+        .myNavBar__Bars {
+            i{
+                font-size: 25px;
+            }
+        }
+    }
+}

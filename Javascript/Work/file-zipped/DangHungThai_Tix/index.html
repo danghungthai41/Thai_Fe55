@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- CDN FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+  <!-- SLICK -->
+  <link rel="stylesheet" href="./css/slick-theme.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+
+  <!-- OWL CAROUSEL -->
+  <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="myNavBar navbar navbar-expand-md">
+      <div class=" col-md-8">
+        <div class="myNavBar__left navbar">
+          <img src="./img/logo_tix.png" alt="" />
+
+          <ul class="nav myNavBar__title" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="business" data-toggle="tab" href="#lichChieu" role="tab">Lịch Chiếu</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="business" data-toggle="tab" href="#cumRap" role="tab">Cụm Rạp</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="business" data-toggle="tab" href="#tinTuc" role="tab">Tin Tức</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="business" data-toggle="tab" href="#ungDung" role="tab">Ứng Dụng</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-2 col-md-4">
+        <div class="myNavBar__right">
+          <div class="myNavBar__login">
+            <img src="./img/download.png" alt="" />
+            <span>Đăng Nhập</span>
+          </div>
+          <div class="dropdown">
+            <a class="btn dropdown-toggle d-flex align-items-center" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown">
+              <div class="myNavBar__locate">
+                <img src="./img/dinhvi.png" alt="" />
+                <span>Hồ Chí Minh</span>
+              </div>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+              <a class="dropdown-item" href="#">Hà Nội</a>
+              <a class="dropdown-item" href="#">Đà Nẵng</a>
+              <a class="dropdown-item" href="#">Hải Phòng</a>
+              <a class="dropdown-item" href="#">Biên Hoà</a>
+              <a class="dropdown-item" href="#">Nha Trang</a>
+              <a class="dropdown-item" href="#">Bình Dương</a>
+              <a class="dropdown-item" href="#">Phan Thiết</a>
+              <a class="dropdown-item" href="#">Hạ Long</a>
+              <a class="dropdown-item" href="#">Cần Thơ</a>
+              <a class="dropdown-item" href="#">Vũng Tàu</a>
+              <a class="dropdown-item" href="#">Quy Nhơn</a>
+              <a class="dropdown-item" href="#">Huế</a>
+              <a class="dropdown-item" href="#">Long Xuyên</a>
+              <a class="dropdown-item" href="#">Thái Nguyên</a>
+              <a class="dropdown-item" href="#">Buôn Ma Thuột</a>
+              <a class="dropdown-item" href="#">Bắc Giang</a>
+              <a class="dropdown-item" href="#">Bến Tre</a>
+              <a class="dropdown-item" href="#">Việt Trị</a>
+              <a class="dropdown-item" href="#">Ninh Bình</a>
+              <a class="dropdown-item" href="#">Thái Bình</a>
+              <a class="dropdown-item" href="#">Vinh</a>
+              <a class="dropdown-item" href="#">Bảo Lộc</a>
+              <a class="dropdown-item" href="#">Đà Lạt</a>
+              <a class="dropdown-item" href="#">Trà Vinh</a>
+              <a class="dropdown-item" href="#">Yên Bái</a>
+              <a class="dropdown-item" href="#">Kiên Giang</a>
+              <a class="dropdown-item" href="#">Vĩnh Long</a>
+              <a class="dropdown-item" href="#">Cà Mau</a>
+              <a class="dropdown-item" href="#">Hậu Giang</a>
+              <a class="dropdown-item" href="#">Tây Ninh</a>
+              <a class="dropdown-item" href="#">Tuyên Quang</a>
+              <a class="dropdown-item" href="#">Thanh Hoá</a>
+              <a class="dropdown-item" href="#">Nam Định</a>
+              <a class="dropdown-item" href="#">Hải Dương</a>
+              <a class="dropdown-item" href="#">Gia Lai</a>
+              <a class="dropdown-item" href="#">Hà Tĩnh</a>
+              <a class="dropdown-item" href="#">Phú Yên</a>
+              <a class="dropdown-item" href="#">Bạc Liêu</a>
+              <a class="dropdown-item" href="#">Long An</a>
+              <a class="dropdown-item" href="#">Đồng Hới</a>
+              <a class="dropdown-item" href="#">Hà Nam</a>
+              <a class="dropdown-item" href="#">Bắc Ninh</a>
+              <a class="dropdown-item" href="#">Quảng Trị</a>
+              <a class="dropdown-item" href="#">Kom Tum</a>
+              <a class="dropdown-item" href="#">Sóc Trăng</a>
+              <a class="dropdown-item" href="#">Sơn La</a>
+              <a class="dropdown-item" href="#">Lạng Sơn</a>
+              <a class="dropdown-item" href="#">Quảng Ngãi</a>
+              <a class="dropdown-item" href="#">Mỹ Tho</a>
+              <a class="dropdown-item" href="#">Đồng Tháp</a>
+              <a class="dropdown-item" href="#">Hưng Yên</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-2 d-md-none myNavBar__Bars">
+        <i class="fa fa-stream"></i>
+      </div>
+    </nav>
+  </header>
+  <!-- END HEADER -->
+
+  <!-- CAROUSEL -->
+  <section class="carousel">
+    <div class="owl-carousel owl-theme myCarousel">
+      <img src="./img/img_banner/chong-nguoi-ta-16053546067770.png" alt="" />
+      <img src="./img/img_banner/bhd-star-59k-ve-ca-tuan-16045660915386.jpg" alt="" />
+      <img src="./img/img_banner/bi-mat-cua-gio-sneakshow-16056745070206.jpg" alt="" />
+      <img src="./img/img_banner/dong-gia-1k-ve-khi-mua-ve-qua-tix-16043766276410.jpg" alt="" />
+      <!-- <img src="./img/img_banner/ky-nghi-nho-doi-16042987493885.png" alt=""> -->
+      <img src="./img/img_banner/tiec-trang-mau-blood-moon-party-16021267739246.png" alt="" />
+    </div>
+    <div class="myCarousel__overlay"></div>
+    <div class="myCarousel__booking">
+      <div class="myCarousel__cover">
+        <div class="myCarousel__item movie">
+          <div class="dropdown myCarousel__dropdown">
+            <a class="dropdown-toggle myCarousel__small--icon" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown">
+              <span>Phim</span>
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Tiệc Trăng Máu - Blood Moon Party (C18)</a>
+              <a class="dropdown-item" href="#">Phù Thủy, Phù Thủy - The Witches (P)</a>
+              <a class="dropdown-item" href="#">Bí Mật Của Gió - Secrets of the Wind (C16)</a>
+              <a class="dropdown-item" href="#">Chồng Người Ta (C18)</a>
+              <a class="dropdown-item" href="#">Trái Tim Quái Vật (C18)</a>
+              <a class="dropdown-item" href="#">Sài Gòn Trong Cơn Mưa - Saigon In The Rain (C16)</a>
+              <a class="dropdown-item" href="#">Trốn Chạy - Run (C18)</a>
+              <a class="dropdown-item" href="#">Đấu Sĩ Tối Thượng - Jiu Jitsu (C18)</a>
+              <a class="dropdown-item" href="#">Fate/Stay Night III: Heaven's Feel
+              </a>
+              <a class="dropdown-item" href="#">Đừng Gọi Anh Là Bố - My God! Father (C16)</a>
+              <a class="dropdown-item" href="#">Kiếm Khách - The Swordsman (C18)</a>
+              <a class="dropdown-item" href="#">Hào Quang Đánh Cắp - Diva (C16)</a>
+              <a class="dropdown-item" href="#">Thanh Âm Trong Mắt Em - Your Eyes Tell (C16)</a>
+              <a class="dropdown-item" href="#">Ranh Giới Quỷ - The Other Side (C18)</a>
+              <a class="dropdown-item" href="#">Liên Quân Siêu Thú - Stardog and Turbocat (P)</a>
+              <a class="dropdown-item" href="#">Những Kẻ Vô Cảm - Don't Look Back (C18)</a>
+              <a class="dropdown-item" href="#">Ngạ Quỷ: Tiếng Thét Đồng Gió Hú - The Ghoul: Horror At The
+                Howling Field (C18)</a>
+              <a class="dropdown-item" href="#">Thang Máy (C18)</a>
+              <a class="dropdown-item" href="#">Tháp Lửa - The Tower (P)</a>
+              <a class="dropdown-item" href="#">Kỳ Nghỉ Nhớ Đời - Golden Holiday (C16)</a>
+              <a class="dropdown-item" href="#">Đoạn Trường Vinh Hoa (P)</a>
+              <a class="dropdown-item" href="#">Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age (P)</a>
+            </div>
+          </div>
+        </div>
+        <div class="myCarousel__item">
+          <div class="dropdown myCarousel__dropdown">
+            <a class="dropdown-toggle myCarousel__small--icon" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown">
+              <span>Rạp</span>
+            </a>
+
+            <div class="dropdown-menu cumRap" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">BHD Star Bitexco</a>
+              <a class="dropdown-item" href="#">BHD Star Vincom 3/2</a>
+              <a class="dropdown-item" href="#">BHD Star Vincom Lê Văn Việt</a>
+              <a class="dropdown-item" href="#">BHD Star Vincom Quang Trung</a>
+              <a class="dropdown-item" href="#">BHD Star Vincom Thảo Điền</a>
+              <a class="dropdown-item" href="#">BHD Star ‎Phạm Hùng</a>
+              <a class="dropdown-item" href="#">CineStar Hai Bà Trưng</a>
+              <a class="dropdown-item" href="#">CineStar Quốc Thanh</a>
+              <a class="dropdown-item" href="#">DCINE Bến Thành</a>
+              <a class="dropdown-item" href="#">DDC - Đống Đa</a>
+              <a class="dropdown-item" href="#">Lotte Cinema Cantavil</a>
+              <a class="dropdown-item" href="#">Lotte Cinema Cộng Hòa</a>
+              <a class="dropdown-item" href="#">Lotte Cinema Gò Vấp</a>
+              <a class="dropdown-item" href="#">Lotte Cinema Nam Sài Gòn</a>
+              <a class="dropdown-item" href="#">Lotte Cinema Phú Thọ</a>
+              <a class="dropdown-item" href="#">Lotte Cinema Thủ Đức</a>
+              <a class="dropdown-item" href="#">Mega GS Cao Thắng</a>
+            </div>
+          </div>
+        </div>
+        <div class="myCarousel__item">
+          <div class="dropdown myCarousel__dropdown">
+            <a class="dropdown-toggle myCarousel__small--icon" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown">
+              <span>Ngày xem</span>
+            </a>
+
+            <div class="dropdown-menu ngayXem" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">Thứ Hai</a>
+              <a class="dropdown-item" href="#">Thứ Ba</a>
+              <a class="dropdown-item" href="#">Thứ Tư</a>
+              <a class="dropdown-item" href="#">Thứ Năm</a>
+              <a class="dropdown-item" href="#">Thứ Sáu</a>
+              <a class="dropdown-item" href="#">Thứ Bảy</a>
+              <a class="dropdown-item" href="#">Chủ Nhật</a>
+            </div>
+          </div>
+        </div>
+        <div class="myCarousel__item">
+          <div class="dropdown myCarousel__dropdown">
+            <a class="dropdown-toggle myCarousel__small--icon" href="#" role="button" id="dropdownMenuLink"
+              data-toggle="dropdown">
+              <span>Suất chiếu</span>
+            </a>
+
+            <div class="dropdown-menu suatChieu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="#">09:10</a>
+              <a class="dropdown-item" href="#">10:45</a>
+              <a class="dropdown-item" href="#">12:15</a>
+              <a class="dropdown-item" href="#">15:20</a>
+              <a class="dropdown-item" href="#">16:30</a>
+              <a class="dropdown-item" href="#">17:15</a>
+              <a class="dropdown-item" href="#">19:35</a>
+              <a class="dropdown-item" href="#">20:55</a>
+              <a class="dropdown-item" href="#">22:15</a>
+            </div>
+          </div>
+        </div>
+        <div class="myCarousel__item">
+          <div class="myCarousel__dropdown">
+            <button class="myCarousel__button button--gray" href="#">
+              <span>MUA VÉ NGAY</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END CAROUSEL -->
+
+  <!-- SHOWTIMES -->
+  <section class="showTime">
+    <div class="showTime__content">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item active" role="presentation">
+          <a class="nav-link active" id="business" data-toggle="tab" href="#bus" role="tab">Đang Chiếu</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="design" data-toggle="tab" href="#des" role="tab">Sắp Chiếu</a>
+        </li>
+      </ul>
+      <!-- Movie -->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="bus" role="tabpanel">
+          <div class="owl-carousel owl-theme courses__carousel">
+            <!-- 1 -->
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Tiệc Trăng Máu -
+                        Blood Moon Party (C18)
+                      </p>
+                      <p>100 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/phu-thuy-phu-thuy-the-witches-p-16030770963055_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/phu-thuy-phu-thuy-the-witches-p-16030770963055_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Phù Thuỷ, Phù Thuỷ -
+                        The Witches (P) (C18)
+                      </p>
+                      <p>106 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                        alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                        alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C16</span>Bí Mật Của Gió -
+                        Secrets of the Wind (C16)
+                      </p>
+                      <p>95 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Chồng Người Ta (C18)
+                      </p>
+                      <p>90 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme courses__carousel">
+            <!-- 1 -->
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Tiệc Trăng Máu -
+                        Blood Moon Party (C18)
+                      </p>
+                      <p>100 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/phu-thuy-phu-thuy-the-witches-p-16030770963055_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/phu-thuy-phu-thuy-the-witches-p-16030770963055_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Phù Thuỷ, Phù Thuỷ -
+                        The Witches (P) (C18)
+                      </p>
+                      <p>106 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                        alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                        alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C16</span>Bí Mật Của Gió -
+                        Secrets of the Wind (C16)
+                      </p>
+                      <p>95 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Chồng Người Ta (C18)
+                      </p>
+                      <p>90 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade show active" id="des" role="tabpanel">
+          <div class="owl-carousel owl-theme courses__carousel">
+            <!-- 1 -->
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Tiệc Trăng Máu -
+                        Blood Moon Party (C18)
+                      </p>
+                      <p>100 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/phu-thuy-phu-thuy-the-witches-p-16030770963055_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/phu-thuy-phu-thuy-the-witches-p-16030770963055_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Phù Thuỷ, Phù Thuỷ -
+                        The Witches (P) (C18)
+                      </p>
+                      <p>106 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                        alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                        alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C16</span>Bí Mật Của Gió -
+                        Secrets of the Wind (C16)
+                      </p>
+                      <p>95 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Chồng Người Ta (C18)
+                      </p>
+                      <p>90 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme courses__carousel">
+            <!-- 1 -->
+            <div class="row">
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/tiec-trang-mau-blood-moon-party-16016226514166_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Tiệc Trăng Máu -
+                        Blood Moon Party (C18)
+                      </p>
+                      <p>100 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/phu-thuy-phu-thuy-the-witches-p-16030770963055_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/phu-thuy-phu-thuy-the-witches-p-16030770963055_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Phù Thuỷ, Phù Thuỷ -
+                        The Witches (P) (C18)
+                      </p>
+                      <p>106 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                        alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png"
+                        alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C16</span>Bí Mật Của Gió -
+                        Secrets of the Wind (C16)
+                      </p>
+                      <p>95 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card">
+                  <div class="card__button">
+                    <div class="card__img">
+                      <img src="./img/img_movie/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="" />
+                      <div class="card__overlay"></div>
+                      <div class="card__play"></div>
+                    </div>
+
+                    <button class="button--red">MUA VÉ</button>
+                  </div>
+                  <div class="card__item">
+                    <div class="card__img">
+                      <img src="./img/img_movie/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="" />
+                    </div>
+                    <div class="card__detail">
+                      <p>
+                        <span class="card__age">C18</span>Chồng Người Ta (C18)
+                      </p>
+                      <p>90 phút</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Movie -->
+    </div>
+  </section>
+  <!-- END SHOWTIMES -->
+  <div class="background__news"></div>
+
+  <!-- START SCHEDULEMOVIES -->
+  <section class="scheduleMovie">
+    <div class="scheduleMovie__cover">
+      <div class="row">
+        <div class="col-12">
+          <div class="row">
+            <div class="col-2 pr-0">
+              <div class="nav flex-column nav-pills scheduleMovie__firstColumn mr-0" id="v-pills-tab" role="tablist"
+                aria-orientation="vertical">
+                <a class="nav-link scheduleMovie__logo active" id="v-pills-home-tab" data-toggle="pill" href="#bhd"
+                  role="tab" aria-controls="v-pills-home" aria-selected="true">
+                  <!-- <div class="scheduleMovie__img"> -->
+                  <img src="./img/img_showtime/bhd.png" alt="" />
+                  <!-- </div> -->
+                </a>
+                <a class="nav-link scheduleMovie__logo" id="v-pills-profile-tab" data-toggle="pill" href="#cinestar"
+                  role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                  <!-- <div class="scheduleMovie__img"> -->
+                  <img src="./img/img_showtime/cinestar.png" alt="" />
+                  <!-- </div> -->
+                </a>
+                <a class="nav-link scheduleMovie__logo" id="v-pills-messages-tab" data-toggle="pill" href="#ddc"
+                  role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                  <!-- <div class="scheduleMovie__img"> -->
+                  <img src="./img/img_showtime/ddc.png" alt="" />
+                  <!-- </div> -->
+                </a>
+                <a class="nav-link scheduleMovie__logo" id="v-pills-settings-tab" data-toggle="pill" href="#mega"
+                  role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                  <!-- <div class="scheduleMovie__img"> -->
+                  <img src="./img/img_showtime/mega.png" alt="" />
+                  <!-- </div> -->
+                </a>
+                <a class="nav-link scheduleMovie__logo" id="v-pills-settings-tab" data-toggle="pill" href="#dcine"
+                  role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                  <!-- <div class="scheduleMovie__img"> -->
+                  <img src="./img/img_showtime/dcine.jpg" alt="" />
+                  <!-- </div> -->
+                </a>
+                <a class="nav-link scheduleMovie__logo" id="v-pills-settings-tab" data-toggle="pill" href="#lotte"
+                  role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                  <!-- <div class="scheduleMovie__img"> -->
+                  <img src="./img/img_showtime/lotte.png" alt="" />
+                  <!-- </div> -->
+                </a>
+              </div>
+            </div>
+            <div class="col-10 pr-0">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="bhd" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <div class="row">
+                    <div class="col-4 p-0">
+                      <div class="nav align-items-center nav-pills scheduleMovie__secondColumn" id="v-pills-tab"
+                        role="tablist" aria-orientation="vertical">
+                        <!-- 1 -->
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#bhd_Pic1" role="tab"
+                          aria-controls="v-pills-home" aria-selected="true">
+                          <div class="scheduleMovie__theater">
+                            <!-- <div class="scheduleMovie__theater--img"> -->
+                            <img src="./img/img_showtime/bhd-star-bitexco-15379552241200.jpg" alt="" />
+                            <!-- </div> -->
+                            <div class="scheduleMovie__theater--content">
+                              <p><span>BHD-Star</span> - Bitexco</p>
+                              <p>L3-Bitexco Icon 68, 2 Hải Triều, Q.1</p>
+                              <p>[chi tiết]</p>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- 2 -->
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#bhd_Pic2" role="tab"
+                          aria-controls="v-pills-profile" aria-selected="false">
+                          <div class="scheduleMovie__theater">
+                            <!-- <div class="scheduleMovie__theater--img"> -->
+                            <img src="./img/img_showtime/bhd-star-vincom-thao-dien-15379553942188.jpg" alt="" />
+                            <!-- </div> -->
+                            <div class="scheduleMovie__theater--content">
+                              <p>
+                                <span class="scheduleMovie__green">BHD-Star</span>
+                                - Vincom Thảo Điền
+                              </p>
+                              <p>L5-Megamall, 159 XL Hà Nội, Q.2</p>
+                              <p>[chi tiết]</p>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- 3 -->
+                        <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#bhd_Pic3" role="tab"
+                          aria-controls="v-pills-home" aria-selected="true">
+                          <div class="scheduleMovie__theater">
+                            <!-- <div class="scheduleMovie__theater--img"> -->
+                            <img src="./img/img_showtime/bhd-star-bitexco-15379552241200.jpg" alt="" />
+                            <!-- </div> -->
+                            <div class="scheduleMovie__theater--content">
+                              <p><span>BHD-Star</span> - Phạm Hùng</p>
+                              <p>
+                                L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình
+                                Chánh
+                              </p>
+                              <p>[chi tiết]</p>
+                            </div>
+                          </div>
+                        </a>
+                        <!-- 4 -->
+                        <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#bhd_Pic4" role="tab"
+                          aria-controls="v-pills-home" aria-selected="true">
+                          <div class="scheduleMovie__theater">
+                            <!-- <div class="scheduleMovie__theater--img"> -->
+
+                            <img src="./img/img_showtime/bhd-star-bitexco-15379552241200.jpg" alt="" />
+                            <!-- </div> -->
+                            <div class="scheduleMovie__theater--content">
+                              <p>
+                                <span>BHD-Star</span> - Vincom Quang Trung
+                              </p>
+                              <p>B1-Vincom QT, 190 Quang Trung, Gò Vấp</p>
+                              <p>[chi tiết]</p>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-8 pr-0">
+                      <div class="tab-content scheduleMovie__thirdColumn" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="bhd_Pic1" role="tabpanel"
+                          aria-labelledby="v-pills-home-tab">
+                          <div class="scheduleMovie__info">
+                            <div class="scheduleMovie__detail">
+                              <div class="scheduleMovie__name">
+                                <img
+                                  src="./img/img_showtime/ky-nghi-nho-doi-golden-holiday-c16-16028181456988_60x60.png"
+                                  alt="" />
+                                <div class="scheduleMovie__text">
+                                  <p>
+                                    <span>C18</span>Tiệc Trăng Máu - Blood
+                                    Moon Party
+                                  </p>
+                                  <p>100 phút - TIX 9.2 - IMDb 0</p>
+                                </div>
+                              </div>
+                              <div class="scheduleMovie__time">
+                                <h3>2D Digital</h3>
+                                <div class="scheduleMovie__coverButton">
+                                  <button class="scheduleMovie__button">
+                                    <span>17:30</span> ~ 19:00
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>19:10</span> ~ 20:40
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>21:40</span> ~ 23:10
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>23:20</span> ~ 00:50
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="scheduleMovie__detail">
+                              <div class="scheduleMovie__name">
+                                <img
+                                  src="./img/img_showtime/ky-nghi-nho-doi-golden-holiday-c16-16028181456988_60x60.png"
+                                  alt="" />
+                                <div class="scheduleMovie__text">
+                                  <p>
+                                    <span>C18</span>Tiệc Trăng Máu - Blood
+                                    Moon Party
+                                  </p>
+                                  <p>100 phút - TIX 9.2 - IMDb 0</p>
+                                </div>
+                              </div>
+                              <div class="scheduleMovie__time">
+                                <h3>2D Digital</h3>
+                                <div class="scheduleMovie__coverButton">
+                                  <button class="scheduleMovie__button">
+                                    <span>17:30</span> ~ 19:00
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>19:10</span> ~ 20:40
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>21:40</span> ~ 23:10
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>23:20</span> ~ 00:50
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="scheduleMovie__detail">
+                              <div class="scheduleMovie__name">
+                                <img
+                                  src="./img/img_showtime/ky-nghi-nho-doi-golden-holiday-c16-16028181456988_60x60.png"
+                                  alt="" />
+                                <div class="scheduleMovie__text">
+                                  <p>
+                                    <span>C18</span>Tiệc Trăng Máu - Blood
+                                    Moon Party
+                                  </p>
+                                  <p>100 phút - TIX 9.2 - IMDb 0</p>
+                                </div>
+                              </div>
+                              <div class="scheduleMovie__time">
+                                <h3>2D Digital</h3>
+                                <div class="scheduleMovie__coverButton">
+                                  <button class="scheduleMovie__button">
+                                    <span>17:30</span> ~ 19:00
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>19:10</span> ~ 20:40
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>21:40</span> ~ 23:10
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>23:20</span> ~ 00:50
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="scheduleMovie__detail">
+                              <div class="scheduleMovie__name">
+                                <img
+                                  src="./img/img_showtime/ky-nghi-nho-doi-golden-holiday-c16-16028181456988_60x60.png"
+                                  alt="" />
+                                <div class="scheduleMovie__text">
+                                  <p>
+                                    <span>C18</span>Tiệc Trăng Máu - Blood
+                                    Moon Party
+                                  </p>
+                                  <p>100 phút - TIX 9.2 - IMDb 0</p>
+                                </div>
+                              </div>
+                              <div class="scheduleMovie__time">
+                                <h3>2D Digital</h3>
+                                <div class="scheduleMovie__coverButton">
+                                  <button class="scheduleMovie__button">
+                                    <span>17:30</span> ~ 19:00
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>19:10</span> ~ 20:40
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>21:40</span> ~ 23:10
+                                  </button>
+                                  <button class="scheduleMovie__button">
+                                    <span>23:20</span> ~ 00:50
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="bhd_Pic2" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="background__news mt-5"></div>
+  <!-- START NEWS -->
+  <section class="news">
+    <div class="news__content">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item active" role="presentation">
+          <a class="nav-link active" id="business" data-toggle="tab" href="#dienAnh24h" role="tab">Điện Ảnh 24h</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="design" data-toggle="tab" href="#review" role="tab">Review</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link" id="design" data-toggle="tab" href="#promo" role="tab">Khuyến mãi</a>
+        </li>
+      </ul>
+      <div class="news__info">
+        <div class="tab-content">
+          <div class="tab-pane fade show active" id="dienAnh24h" role="tabpanel">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 pl-0">
+                  <div class="news__item">
+                    <div class="news__card">
+                      <img src="./img/img_celebrity/hinh1.jpeg" alt="">
+                      <p>“Bóc tem” tổ hợp giải trí mới toanh của giới Hà Thành</p>
+                      <p>Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo độc-lạ-chill nhất từ trước đến giờ
+                        sẽ chính thức khai trương tại 360 Giải Phóng! </p>
+                      <div class="news__icon">
+                        <span><img src="./img/img_celebrity/like.png" alt=""> 0
+                        </span>
+                        <span><img src="./img/img_celebrity/comment.png" alt="">1
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 pl-0">
+                  <div class="news__item">
+                    <div class="news__card">
+                      <img src="./img/img_celebrity/hinh2.png" alt="">
+                      <p>Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết</p>
+                      <p>Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích Quỷ Ám</p>
+                      <div class="news__icon">
+                        <span><img src="./img/img_celebrity/like.png" alt=""> 0
+                        </span>
+                        <span><img src="./img/img_celebrity/comment.png" alt="">1
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="news__item">
+                    <div class="news__card">
+                      <img src="./img/img_celebrity/hinh2.png" alt="">
+                      <p>Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết</p>
+                      <p>Điểm nhấn của phim kinh dị năm <br> 2020 chính là Tàn Tích Quỷ Ám</p>
+                      <div class="news__icon">
+                        <span><img src="./img/img_celebrity/like.png" alt=""> 0
+                        </span>
+                        <span><img src="./img/img_celebrity/comment.png" alt="">1
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="news__item">
+                    <div class="news__card">
+                      <img src="./img/img_celebrity/hinh2.png" alt="">
+                      <p>Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết</p>
+                      <p>Điểm nhấn của phim kinh dị năm <br> 2020 chính là Tàn Tích Quỷ Ám</p>
+                      <div class="news__icon">
+                        <span><img src="./img/img_celebrity/like.png" alt=""> 0
+                        </span>
+                        <span><img src="./img/img_celebrity/comment.png" alt="">1
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="news__item">
+                    <!-- <div class="news__card">
+                        <img src="./img/img_celebrity/hinh2.png" alt="">
+                        <p>Review: Tàn Tích Quỷ Ám (Relic) - Ba thế hệ và mối liên kết</p>
+                          <p>Điểm nhấn của phim kinh dị năm 2020 chính là Tàn Tích Quỷ Ám</p>
+                          <div class="news__icon">
+                           
+                            <span><i class="fa fa-comment-alt"></i>1
+                            </span>
+                          </div>
+                      </div> -->
+                    <ul class="nav flex-column news__small" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="business" data-toggle="tab" href="#" role="tab">
+                          <img src="./img/img_celebrity/hinh-nho-1.jpeg" alt="">
+                          <p>Khi phụ nữ không còn ở <br> thế trốn chạy của nạn nhân</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="business" data-toggle="tab" href="#" role="tab">
+
+                          <img src="./img/img_celebrity/hinh-nho-2.png" alt="">
+                          <p>Gerard Butler cùng bồ cũ Deadpool tham gia Greenland</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="business" data-toggle="tab" href="#" role="tab">
+                          <img src="./img/img_celebrity/hinh-nho-3.png" alt="">
+                          <p>Diễn viên đặc biệt của Bằng Crhứng Vô Hình</p>
+                        </a>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="business" data-toggle="tab" href="#" role="tab">
+                          <img src="./img/img_celebrity/hinh-nho-4.png" alt="">
+                          <p>Pee Nak 2 - Vạn kiếp thiên <br> thu, đi tu không hết nghiệp!</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade show active" id="review" role="tabpanel">
+            <p>review</p>
+          </div>
+          <div class="tab-pane fade show active" id="promo" role="tabpanel">
+            <p>promotion</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- END NEWS -->
+
+  <!-- START APP -->
+  <div class="app">
+
+    <div class="app__content">
+      <div class="row">
+        <div class="app__left">
+          <div class="app__text">
+            <h3>Ứng dụng tiện lợi dành cho</h3>
+            <h3> người yêu điện ảnh
+            </h3>
+            <p>
+              Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.
+            </p>
+            <button>App miễn phí - Tải về ngay!</button>
+            <p>TIX có hai phiên bản
+              <a href="#">IOS</a> & <a href="#">Android</a>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="app__right">
+          <img class="app__phoneCase" src="./img/img_mobile/iphone.png" alt="Phone Case">
+
+          <div class="owl-carousel owl-theme app__imgContent">
+            <img class="app__imgItem" src="./img/img_mobile/download (1).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download.jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (9).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (8).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (7).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (6).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (5).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (4).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (3).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (2).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (13).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (12).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (11).jpeg" alt="">
+            <img class="app__imgItem" src="./img/img_mobile/download (10).jpeg" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- END APP -->
+
+  <!-- START FOOTER -->
+  <footer>
+    <div class="row">
+      <div class="col-2">
+        <ul>
+          <li>
+            TIX
+          </li>
+          <li>
+            <a href="#">FAQ</a>
+          </li>
+          <li>
+            <a href="#">Brand Guidelines</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul>
+          <li></li>
+          <li><a href="#"></a>Thoả thuận sử dụng</li>
+          <li><a href="#"></a>Chính sách bảo mật</li>
+        </ul>
+      </div>
+
+      <div class="col-4">
+        <p>ĐỐI TÁC</p>
+        <div class="row">
+          <img src="./img/img_partners/cgv.png" alt="">
+          <img src="./img/img_partners/bhd.png" alt="">
+          <img src="./img/img_partners/galaxy.png" alt="">
+          <img src="./img/img_partners/cinestar.png" alt="">
+          <img src="./img/img_partners/lottecinema.png" alt="">
+        </div>
+
+        <div class="row">
+          <img src="./img/img_partners/cgv.png" alt="">
+          <img src="./img/img_partners/bhd.png" alt="">
+          <img src="./img/img_partners/galaxy.png" alt="">
+          <img src="./img/img_partners/cinestar.png" alt="">
+          <img src="./img/img_partners/lottecinema.png" alt="">
+        </div>
+        <div class="row">
+          <img src="./img/img_partners/cgv.png" alt="">
+          <img src="./img/img_partners/bhd.png" alt="">
+          <img src="./img/img_partners/galaxy.png" alt="">
+          <img src="./img/img_partners/cinestar.png" alt="">
+          <img src="./img/img_partners/lottecinema.png" alt="">
+        </div>
+        <div class="row">
+          <img src="./img/img_partners/cgv.png" alt="">
+          <img src="./img/img_partners/bhd.png" alt="">
+          <img src="./img/img_partners/galaxy.png" alt="">
+          <img src="./img/img_partners/cinestar.png" alt="">
+          <img src="./img/img_partners/lottecinema.png" alt="">
+        </div>
+      </div>
+
+
+
+
+      <div class="col-2">
+        <ul class="nav" id="myTab" role="tablist">
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#" role="tab">MOBILE APP</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#" role="tab">
+              <img style="width: 20px" src="./img/img_partners/apple.png" alt="">
+            </a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#" role="tab">
+              <img style="width: 20px" src="./img/img_partners/android.png" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-2">
+        <ul class="nav" id="myTab" role="tablist">
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#" role="tab">Thỏa thuận sử dụng</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" data-toggle="tab" href="#" role="tab">Chính sách bảo mật</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+  </footer>
+
+  <!-- END FOOTER -->
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/slick.min.js"></script>
+  <!-- OWL CAROOUSEL -->
+  <script src="./js/owl.carousel.min.js"></script>
+
+  <script>
+    $(".owl-carousel").owlCarousel({
+      fade: true,
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      infinity: true,
+      // autoplay: true,
+      autoplaySpeed: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+    $(".courses__carousel").owlCarousel({
+      fade: true,
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      infinity: true,
+      // autoplay: true,
+      autoplaySpeed: true,
+      autoplayTimeout: 3000,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 4,
+        },
+      },
+    });
+    $(".app__imgContent").owlCarousel({
+      fade: true,
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: true,
+      infinity: true,
+      // autoplay: true,
+      autoplaySpeed: true,
+      autoplayTimeout: 3000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 1,
+        },
+        1000: {
+          items: 1,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

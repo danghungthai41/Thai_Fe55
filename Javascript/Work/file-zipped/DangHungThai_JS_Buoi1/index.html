@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Bài 1 -->
+    <!-- <h1>Anh Khải dạy Javascript tại Cybersoft Chán Vãi</h1> -->
+    <h1>Học JavaScript tại Cybersoft thật đỉnh</h1>
+
+    <p id="theNoiDung">Nội dung trước khi thay đổi</p>
+    <button id="btnClick">Nhấn em đi</button>
+
+
+    <!-- Bài 2 -->
+    <h1>Học JavaScript tại Cybersoft thật đỉnh</h1>
+    <p>Thay đổi giá trị của thuộc tính. <br>
+        Demo thay đổi thuộc tình src (Source) của hình image.
+    </p>
+    <img id="theImg" src="./img/pic_bulboff.gif" alt="">
+    <button id="turnOnLight">Bật đèn</button>
+    <button id="turnOffLight">Tắt đèn</button>
+
+
+    <!-- Bài 3: -->
+    <h3>Bài 3: Bài tập tăng giảm Front chữ</h3>
+    <div id="text_font" class="text_size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus
+        voluptate ipsa culpa necessitatibus laborum ab, suscipit quae officia asperiores?</div>
+    <button id="btnTangFont">+</button>
+    <button id="btnGiamFont">-</button>
+
+    <hr>
+    <h3>Demo dựa vào tag name (tên thẻ)</h3>
+    <section>Nội dung thẻ 1</section>
+    <section>Nội dung thẻ 2</section>
+    <section>Nội dung thẻ 3</section>
+    <section>Nội dung thẻ 4</section>
+
+    <hr>
+    <h3>Demo dựa vào class name (tên class)</h3>
+    <p class="class_text">123</p>
+    <p class="class_text">123</p>
+    <p class="class_text">123</p>
+    <hr>
+    <h3>Demo QuerySelectorAll <h3>
+
+            <h1>Bài tập 4: Bài tập đăng nhập</h1>
+            <div class="card">
+                <div class="card-header text-center font-weight-bold">Đăng Nhập</div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <p>Tài khoản</p>
+                        <input id="taiKhoan" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <p>Mật khẩu</p>
+                        <input id="matKhau" class="form-control" />
+                    </div>
+                </div>
+                <div class="card-footer text-right">
+                    <button id="btnThongBao" onclick="changeValue()">Thông Báo</button>
+                </div>
+            </div>
+
+            <hr>
+            <!-- BÀI TẬP 4
+            <div class="card text-white bg-primary">
+                <img class="card-img-top" src="holder.js/100px180/" alt="">
+                <div class="card-body">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text">Text</p>
+                </div>
+            </div> -->
+
+            <!-- Bài Tập 5: -->
+            <h1>Bài tập 5: tính tiền TIP</h1>
+            <div class="card w-50 mx-auto">
+                <div class="card-header text-center font-weight-bold bg-danger text-light">TÍNH TIỀN TIP</div>
+                <div class="card-body bg-danger">
+                    <div class="form-group">
+                        <p>Tổng tiền thanh toán</p>
+                        <input id="tongTienThanhToan" class="form-control">
+                    </div>
+                    <!-- <div class="form-group">
+                        <p>Bạn muốn tip bao nhiêu</p>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="soTienTip"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Chọn để tip
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="triggerId">
+                                <a class="dropdown-item" value="30" href="#">30% - Tuyệt</a>
+                                <a class="dropdown-item" value="20" href="#">20% - Tốt</a>
+                                <a class="dropdown-item" value="15" href="#">15% - Tạm ổn</a>
+                                <a class="dropdown-item" value="10" href="#">10% - Tồi</a>
+                                <a class="dropdown-item" value="5" href="#">5% - Thật tệ</a>
+
+                            </div>
+                        </div>
+
+                    </div> -->
+                    <div class="form-group">
+                      <label for=""></label>
+                      <select class="form-control" name="" id="phanTramTip">
+                        <option class="dropdown-item" value="30" href="#">30% - Tuyệt</option>
+                        <option class="dropdown-item" value="20" href="#">20% - Tốt</option>
+                        <option class="dropdown-item" value="15" href="#">15% - Tạm ổn</option>
+                        <option class="dropdown-item" value="10" href="#">10% - Tồi</option>
+                        <option class="dropdown-item" value="5" href="#">5% - Thật tệ</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <p>Bạn muốn share bao nhiêu người</p>
+                        <input type="text" id="soNguoiShare" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-warning btnTinhTien">TÍNH NÀO</button>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <h3>Tiền tip/người</h3>
+                    <span class="tienTipTrenNguoi display-4">0</span>
+                    <span class="display-4">$</span>
+                </div>
+            </div>
+
+            <script src="./demo.js"></script>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+</body>

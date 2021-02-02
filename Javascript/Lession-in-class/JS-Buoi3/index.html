@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-7 pr-5">
+                <h1 class="display-5 text-center pb-4">QUẢN LÝ SINH VIÊN</h1>
+                <div class="form-group">
+                    <p>Mã Sinh Viên
+                    </p>
+                    <input id="maSinhVien" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <p>Tên Sinh Viên
+                    </p>
+                    <input id="tenSinhVien" type="text" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <p>Loại Sinh Viên
+                    </p>
+                    <select id="loaiSinhVien" class="form-control">
+                        <option>Bình Thường</option>
+                        <option>Khó Khăn</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Điểm Toán</p>
+                            <input id="diemToan" type="text" type="text" class="form-control">
+                        </div>
+                        <div class="col-4">
+                            <p>Điểm Lý</p>
+                            <input id="diemLy" type="text" type="text" class="form-control">
+                        </div>
+                        <div class="col-4">
+                            <p>Điểm Hoá</p>
+                            <input id="diemHoa" type="text" type="text" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <p>Điểm Rèn Luyện
+                    </p>
+                    <input id="diemRenLuyen" type="text" class="form-control">
+                </div>
+                <div class="form-group text-center">
+                    <button id="btnXacNhan" class="btn btn-success justify-content-center">Xác Nhận</button>
+
+                </div>
+            </div>
+            <div class="col-5">
+                <h1 class="display-5 text-center pb-4">Thông Tin Sinh Viên</h1>
+                <p>Tên Sinh Viên: <span id="sTenSinhVien" class="text-danger font-weight-bold"></span></p>
+                <p>Mã Sinh Viên: <span id="sMaSinhVien" class="text-danger font-weight-bold"></span></p>
+                <p>Loại Sinh Viên: <span id="sLoaiSinhVien" class="text-danger font-weight-bold"></span></p>
+                <p>Điểm Trung Bình: <span id="diemTrungBinh" class="text-danger font-weight-bold"></span></p>
+                <p>Xếp Loại: <span id="xepLoai" class="text-danger font-weight-bold"></span></p>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- <script src="./index.js"></script> -->
+    <script src="./indexOOP.js"></script>
+</body>
+
+</html>

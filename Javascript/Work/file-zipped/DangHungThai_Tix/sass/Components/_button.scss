@@ -1,0 +1,10 @@
+.button--gray{
+    // white-space: nowrap;
+    @include buttonStyle($color-white-0, $color-gray-4, $color-gray-4, $fs-2, $fw-2, $pd-1, $pd-0, $border-radius-1);
+}
+.button--red{           
+    @include buttonStyle($color-white-0, $color-red-0, $color-red-0, $fs-2, $fw-2, $pd-1, $pd-4, $border-radius-1);
+    &:hover{
+        @include buttonStyle($color-white-0, $color-red-1, $color-red-1, $fs-2, $fw-2, $pd-1, $pd-4, $border-radius-1);
+    }
+}

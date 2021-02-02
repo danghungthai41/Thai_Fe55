@@ -1,0 +1,548 @@
+/* GLOBAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.line::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: inline-block;
+    transition: all 0.5s;
+}
+html, body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.section-title{
+    color: #ec7532;
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+/* HEADDER */
+.header__detail{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+#movieNavBar  .navbar-nav, #hiddenHeader  .navbar-nav{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.header__detail span{
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.header__detail i:last-child{
+    margin-right: 30px;
+}
+#movieNavBar .navbar-nav .nav-link, #hiddenHeader .navbar-nav .nav-link{
+    padding: 0 30px ;
+}
+#movieNavBar .navbar-nav .nav-item, #hiddenHeader .navbar-nav .nav-item{
+    position: relative;
+}
+#movieNavBar .navbar-nav .nav-item.active::after, #movieNavBar .navbar-nav .nav-item.line:hover::after, #hiddenHeader .navbar-nav .nav-item.active::after{
+    width: 100%;
+}
+
+/* HIDDEN HEADER */
+#hiddenHeader {
+    background-color: black; 
+    position: fixed;
+    top: -100px;
+    width: 100%; 
+    transition: top 0.3s;
+    z-index: 990;
+    padding: 0 15px 0 15px;
+}
+/* END HEADDER */
+
+
+/* MOVIE CAROUSEL */
+.movieCarousel .carousel-inner .carousel-item.carousel__Bg1{
+    background: url('../img/hero-1.jpg') no-repeat center center;
+    width: 100%;
+    height: 650px;
+
+}
+.movieCarousel .carousel-inner .carousel-item.carousel__Bg2{
+    background: url('../img/hero-2.jpg') no-repeat center center;
+    width: 100%;
+    height: 650px;
+}
+.movieCarousel .carousel-inner .carousel-item.carousel__Bg3{
+    background: url('../img/hero-3.jpg') no-repeat center center;
+    width: 100%;
+    height: 650px;
+}
+.carousel-item__overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, black, transparent);
+}
+#carouselMovie .carousel-caption{
+    text-align: left;
+    /* Căn giữa dùng cho absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#carouselMovie .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+    opacity: 1;
+    margin: 0 5px;
+    /* cách 1 */
+    /* background-clip: border-box; */
+    /* cách 2: Dùng thuộc tính background thay vì background-color */
+}
+#carouselMovie .carousel-indicators li.active{
+    background-color: white;
+}
+#carouselMovie .carousel-indicators{
+    justify-content: flex-start;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    padding: 0 15px 0 15px;
+}
+.carousel-item__overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, black, transparent);
+}
+
+.carousel-item__content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.carousel-item__content .tittle{
+    color: #fbbe61;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.carousel-item__content p{
+    font-size: 18px;
+    padding-right: 25%;
+}
+.carousel-item__trailer span{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid white;
+}
+.btn-orange{
+    background: linear-gradient(to right, #fbbe61, #ec7532);
+    border-radius: 40px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    padding: 11px 30px;
+    cursor: pointer;
+    /* border: none; */
+}
+.movieCarousel .carousel-indicators{
+    bottom: 50px;
+}
+.movieCarousel .carousel-indicators li {
+   background: white;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1.5px solid white;
+}
+.movieCarousel .carousel-indicators li.active{
+    background-color: white;
+}
+/* END MOVIE CAROUSEL */
+
+/* NEW IN */
+.newIn__img{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.newIn__overlay{
+    position: absolute;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(to bottom, #fbbd61, #ec7532);
+    top: 0;
+    left: 0;
+    opacity: .8;
+    transform: skewX(45deg) translateX(-300%);
+    /* transition: all 0.5s; */
+}
+.newIn__img:hover .newIn__overlay {
+    transform: skewX(45deg) translateX(-23%) scale(1);
+    transition: all 0.5s;
+    left: -100%;
+}
+.newIn h2.line::after{
+    width: 130px;
+}
+.newIn .newIn__play{
+position: absolute;
+top:50%;
+left: 50%;
+transform: translate(-50%,-50%) scale(0.9);
+width: 100%;
+text-align: center; 
+transition: all 0s;
+opacity: 0;
+color: white;
+text-align: center;
+/* transition: all 0.5s; */
+}
+.newIn__img:hover .newIn__play{
+    opacity: 1;
+    transition: all 0.8s;
+    transform: translate(-50%,-50%) scale(1);
+}
+.newIn__play i{
+width: 80px;
+height: 80px;
+font-size: 18px;
+border-radius: 50%;
+border: 2px solid white;
+margin: 15px auto;
+line-height: 80px;
+}
+.newIn__play a{
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+.newIn__play span{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.newIn__img img{
+    border-radius: 10px;
+}
+.newIn__star{
+    color: #fbbd61;
+    font-size: 14px;
+}
+/* END NEW IN */
+
+
+/* SHOW TIME */
+.showTime {
+    padding-top: 70px;
+}
+.showTime .nav-tabs .nav-link{
+    position: relative;
+    color: #4a4a4a4a;
+    padding: 10px 30px;
+}
+.showTime .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active, .showTime .nav-tabs .nav-link:hover {
+    border: white;
+}
+.showTime__image img{
+    width: 160px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.showTime__detail span:first-child{
+    color: #ec7532;
+    font-size: 14px;
+}
+.showTime__detail h1{
+    font-size: 25px;
+    font-weight: 300;
+}
+.showTime__detail p{
+    font-size: 16px;
+    color: #717171;
+    margin: 15px 0;
+}
+.showTime__detail a{
+    letter-spacing: 2px;
+    color: #ec7532;
+    font-size: 14px;
+    font-weight: 300;
+    display: inline;
+}
+.showTime__detail a:hover{
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s;
+}
+.showTime .nav-tabs .nav-item .nav-link.active.line::after, .showTime .nav-tabs .nav-item .nav-link:hover.line::after,  #hiddenHeader .navbar-nav .nav-item.line:hover::after{
+    width: 100%;
+}
+.showTime__list i, .showTime__list span{
+    font-size: 14px;
+}
+.showTime__list .showTime__length{
+    color: black;
+}
+.showTime__length span{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+}
+
+.showTime__image img{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.showTime .row::after{
+    content:'';
+    width: 100%;
+    border-bottom: 1px solid rgba(74, 74, 74, 0.2);
+    display: inline-block;
+    padding-top: 45px;
+}
+.showTime .row.showTime__clear__border::after{
+    content: '';
+    width: 100%;
+    border-bottom: none;
+}
+/* END SHOW TIME */
+
+
+/* COMING SOON */
+.comingSoon{
+    margin-top: 50px;
+    background-color: black;
+}
+.comingSoon .comingSoon__bg {
+    padding: 80px 0;
+    background-image: url(../img/slide-7.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.comingSoon__bg .comingSoon__title {
+    color: white;
+}
+.comingSoon__bg .section-title.line::after{
+    width: 130px;
+}
+.comingSoon__bg .comingSoon__detail > span{
+    color: #ec7532;
+    font-size: 14px;
+}
+.comingSoon .comingSoon__detail > h1{
+    font-size: 34px;
+}
+.comingSoon .comingSoon__detail .fa-star{
+    color: #fbbd61;
+    font-size: 10px;
+}
+.comingSoon .comingSoon__detail .comingSoon__date{
+    color: rgba(255, 255, 255, 0.5);
+}
+.comingSoon .comingSoon__detail .comingSoon__date .fa-calendar{
+    margin-left: 10px;
+    font-size: 14px;
+}
+.comingSoon__detail a{
+    letter-spacing: 3px;
+    color:#ec7532;
+    font-style: 12px;
+}
+.comingSoon__trailer{
+    position: relative;
+}
+.comingSoon .comingSoon__bg .comingSoon__video{
+    background: url('../img/slide-1-video.png') no-repeat center center;
+    width: 100%;
+    height: 350px;
+}
+.comingSoon__video:hover i{
+    transform: translate(-50%, 150%) scale(0.9);
+    transition: all 0.5s;
+}
+.comingSoon__video i{
+    width: 84px;
+    height: 84px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 84px;
+    text-align: center;
+    color: white;
+    border: 2px solid #ec7532;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 150%) scale(1);
+}
+/* MOVIE LIST */
+.slick-slider .slick-arrow {
+    font-size: 40px;
+    position: absolute;
+    top: 28%;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    background: linear-gradient(to bottom,#fbbd61, #ec7532);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.slick-slider .slick-arrow.left {
+    left: -35px;
+} 
+.slick-slider .slick-arrow.right {
+    right: -35px;
+}
+.comingSoon__list .comingSoon__list__item img{
+    width: 100%;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.comingSoon__list__overlay{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    height: 100%;
+}
+.comingSoon__list__item:hover .comingSoon__list__overlay, .comingSoon__list__item.active .movieList__overlay{
+    background: rgba(0, 0, 0, 0);
+
+}
+.comingSoon__list__overlay:focus, .comingSoon__list .comingSoon__list__item:focus{
+    outline: none !important;
+}
+
+.comingSoon__list__item{
+    position: relative;
+    text-align: center;
+    width: 16%;
+}
+.comingSoon__list .comingSoon__list__item >p{
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: 15px;
+    color:white;
+}
+.comingSoon__list .comingSoon__list__item p~p{
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 14px;
+    text-overflow: ellipsis;
+    padding: 0;
+
+}
+/* END COMING SOON */
+
+/* CONTACT */
+.contact__black ul{
+    list-style: none;
+}
+.contact__black ul li{
+    text-decoration: none;
+}
+.contact__white {
+    background-color: white;
+    padding: 60px 0;
+}
+.contact__white .contact__text p{
+    font-size: 25px;
+}
+.contact__white .contact__text span{
+    font-size: 40px;
+    color: #fbbd61;
+}
+.contact__black{
+    background-color: black;
+}
+.contact__black h4{
+    color: #ec7532;
+    letter-spacing: 2px;
+    font-size: 18px;
+    padding-bottom: 20px;
+    margin: 15px 0;
+}
+.contact__black .contact__black__item a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: inline;
+}
+.contact__black .contact__black__item a:hover{
+    color: #fbbd61;
+    transition: all 0.5s;
+}
+.contact__black .contact__black__item li{
+    list-style: none;
+}
+.contact__black .contact__black__item .fa-facebook-f{
+    font-size: 14px;
+    padding-right: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.contact__black .contact__black__item .fa-twitter{
+    font-size: 14px;
+    padding-right: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.contact__black .contact__black__item .fa-google-plus-g{
+    font-size: 14px;
+    padding-right: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.contact__black .contact__black__item a:hover .fa-facebook-f, .contact__black .contact__black__item a:hover .fa-twitter, .contact__black .contact__black__item:hover a:hover .fa-google-plus-g{
+    color: #fbbe61;
+    transition: all 0.5s;
+}
+.contact__black .row{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.contact__black .contact__footer {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.contact__black .contact__footer:hover {
+    color: #ec7532;
+    transition: all 0.5s;
+
+}
+
+/* END CONTACT */
+
+
+/* FOOTER */
+@media screen and (max-width: 992px) {
+    .showTime__image img{ 
+        width: 500px !important;
+        height: 300px;
+        margin: 0 0 15px 0;
+    }
+    .showTime__detail img{
+        margin-left: 15px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .showTime__detail{
+        margin-left: 20px;
+    }
+}

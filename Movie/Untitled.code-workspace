@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../Downloads/BT_Housing"
+		},
+		{
+			"path": "../JS-buoi1"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/movieBootstrap"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Movie"
+	}
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACH,UAAU,EAAE,0BAA0B;EACtC,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;CAqBd;;AAxBD,AAIE,IAJE,CAIF,aAAa,CAAC;EACZ,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,MAAM;CAiBf;;AAvBH,AAcM,IAdF,CAIF,aAAa,CASX,WAAW,CACT,eAAe,CAAC;EACd,KAAK,EAAE,KAAK;CAEb",
+    "sources": [
+        "../Layouts/app.scss"
+    ],
+    "names": [],
+    "file": "app.css"
+}

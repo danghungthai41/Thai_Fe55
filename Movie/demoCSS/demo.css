@@ -1,0 +1,52 @@
+/* Desktop first */
+/* Xây dựng ở màn hình lớn trước rồi chỉnh sửa cho phù hợp ở màn hình nhỏ */
+
+
+
+/* Media qeury */
+/* type: screen, print, speech, all */
+
+h1{
+    background-color: red;
+}
+@media screen and (max-width:1200px){
+    /* Nhỏ hơn hoặc bằng 1200px */
+    h1{
+        background-color: yellow;
+    }
+
+}
+@media screen and (max-width:992px){
+    /* Nhỏ hơn hoặc bằng 992px */
+    h1{
+        background-color: green;
+    }
+
+}
+
+/* Mobile First */
+/* Xây dựng ở màn hình nhỏ trước rồi chỉnh sửa cho phù hợp ở màn hình lớn */
+
+
+h2{
+    background-color: pink;
+}
+@media screen and (min-width:768px){
+    /* lớn hơn hoặc bằng 768px */
+    h2{
+        background-color: violet;
+    }
+}
+@media screen and (min-width:1200px){
+    /* Lớn hơn hoặc bằng 1  200px */
+    h2{
+        background-color: gold
+    }
+}
+
+
+@media screen and (min-width: 900px) and (max-width: 1000px){
+    h2{
+        background-color: gray;
+    }
+}

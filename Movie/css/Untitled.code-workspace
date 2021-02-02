@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../Downloads/BT_Housing"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Movie"
+	}
+}
